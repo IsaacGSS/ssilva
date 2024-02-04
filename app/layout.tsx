@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { Lato } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
-import { Header } from './components/Header'
+import { Header } from './components/header/Header'
+import { CommandUltra } from './components/command/CommandUltra'
 
 const sansilk = localFont({
   src: '../font/Sansilk.otf',
@@ -29,8 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pt-BR'>
-      <body className={`${sansilk.variable} ${lato.className} bg-neutral-950`}>
+      <body
+        className={`${sansilk.variable} ${lato.className} bg-neutral-950 font-lato`}
+      >
         <Header />
+        <CommandUltra />
         {children}
       </body>
     </html>
