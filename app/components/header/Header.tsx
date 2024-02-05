@@ -1,11 +1,11 @@
 import { Blocks, LandPlot, Megaphone } from 'lucide-react'
 import Link from 'next/link'
-import { Pen } from '../command/Pen'
+import { CommandUltra } from '../command/CommandUltra'
 
 export const Header = () => {
   return (
     <header className='w-screen h-14 fixed bottom-0 md:top-0 justify-center px-10 md:py-5 py-10 text-white flex md:justify-between items-center text-center font-lato gap-5'>
-      <Pen />
+      <CommandUltra />
       <nav className='md:bg-transparent bg-zinc-950/65 border md:border-none rounded-md border-zinc-300/45 shadow-md md:shadow-none shadow-zinc-950/70 p-3 md:p-0'>
         <ul className='flex flex-row gap-2.5'>
           <li>
