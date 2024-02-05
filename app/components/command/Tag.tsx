@@ -1,4 +1,10 @@
-export const Tag = (children: any) => {
+import { ReactNode } from 'react'
+
+interface itag {
+  children: ReactNode
+}
+
+export const Tag = ({ children }: itag) => {
   return (
     <div className='flex flex-row gap-2 md:static absolute bg-center md:translate-x-0 translate-x-24'>
       {children}
