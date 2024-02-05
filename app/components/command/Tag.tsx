@@ -1,9 +1,6 @@
 import { ReactNode } from 'react'
 
-interface Itag {
-  children: ReactNode
-}
-export const Tag = ({ children }: Itag) => {
+export const Tag = (children: ReactNode) => {
   return (
     <div className='flex flex-row gap-2 md:static absolute bg-center md:translate-x-0 translate-x-24'>
       <div className='bg-gradient-to-r from-[#800056] to-[#be3455] to-60% rounded w-6 h-6 flex justify-center items-center cursor-pointer'>
