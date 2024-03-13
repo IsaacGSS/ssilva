@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { CommandDialog } from '@/components/ui/command'
 import { CommandMenu } from './CommandMenu'
-import { MoonStar } from 'lucide-react'
+import { Sparkles } from 'lucide-react'
 import { Tag } from './Tag'
 
 export function CommandUltra() {
@@ -11,7 +11,7 @@ export function CommandUltra() {
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (e.key === '/' && (e.metaKey || e.ctrlKey)) {
+      if (e.key === '/') {
         e.preventDefault()
         setOpen(open => !open)
       }
@@ -27,7 +27,7 @@ export function CommandUltra() {
           className='bg-gradient-to-r from-[#800056] to-[#be3455] to-60% rounded w-6 h-6 flex justify-center items-center cursor-pointer'
           onClick={() => setOpen(open => !open)}
         >
-          <MoonStar className=' m-auto fill-zinc-100/80 text-zinc-100/80 size-4' />
+          <Sparkles className=' m-auto fill-zinc-100/80 text-zinc-100/80 size-4' />
         </div>
       </Tag>
 
