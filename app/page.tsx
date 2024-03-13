@@ -17,8 +17,6 @@ export default function Home() {
         </p>
         <br />
       </main>
-
-      <Projetc />
     </>
   )
 }
